@@ -68,6 +68,9 @@
             background-color: black;
             color: white;
         }
+        #video-link {
+            display: none; /* Ocultar el enlace inicialmente */
+        }
     </style>
 </head>
 <body>
@@ -91,7 +94,7 @@
         </div>
     </div>
 
-    <a href="https://www.youtube.com/watch?v=Fh6XXxBHy6c" target="_blank">Mira el video</a>
+    <a id="video-link" href="https://www.youtube.com/watch?v=Fh6XXxBHy6c" target="_blank">Mira el video</a>
 
     <div class="social-buttons">
         <!-- Botones de Instagram -->
@@ -128,6 +131,7 @@
             if (distance < 0) {
                 clearInterval(countdownFunction);
                 document.getElementById("countdown").innerHTML = "¡Es hora!";
+                document.getElementById("video-link").style.display = "inline"; // Mostrar el enlace al video
             }
         }, 1000);
     </script>
