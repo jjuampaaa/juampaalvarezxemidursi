@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Regresiva</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Textura del fondo */
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 60px;
+        }
+        .time-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .time-unit span {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="countdown">
+        <div class="time-unit">
+            <div id="days"></div>
+            <span>Días</span>
+        </div>
+        <div class="time-unit">
+            <div id="hours"></div>
+            <span>Horas</span>
+        </div>
+        <div class="time-unit">
+            <div id="minutes"></div>
+            <span>Minutos</span>
+        </div>
+        <div class="time-unit">
+            <div id="seconds"></div>
+            <span>Segundos</span>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <a href="https://instagram.com/jjuampaaa" target="_blank">Instagram: @jjuampaaa</a>
+        <a href="https://instagram.com/emidursi" target="_blank">Instagram: @emidursi</a>
+    </div>
+
+    <script>
+        // Configuración de la fecha y hora de finalización
+        var countdownDate = new Date("2024-08-20T20:00:00").getTime();
+
+        // Actualizar la cuenta regresiva cada segundo
+        var countdownFunction = setInterval(function() {
+
+            // Obtener la fecha y hora actual
+            var now = new Date().getTime();
+            
+            // Calcular la distancia entre ahora y la fecha de finalización
+            var distance = countdownDate - now;
+            
+            // Calcular días, horas, minutos y segundos
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Mostrar la cuenta regresiva en los elementos correspondientes
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+            
+            // Si la cuenta regresiva ha terminado
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "¡Es hora!";
+                window.location.href = "https://www.youtube.com/watch?v=Fh6XXxBHy6c"; // Redirección al video de YouTube
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
