@@ -7,7 +7,6 @@
     <style>
         body {
             background-color: black;
-            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Textura del fondo */
             color: white;
             font-family: Arial, sans-serif;
             display: flex;
@@ -33,23 +32,40 @@
             font-size: 20px;
             margin-top: 10px;
         }
-        .buttons {
-            margin-top: 30px;
-            display: flex;
-            gap: 20px;
-        }
         a {
             color: white;
             text-decoration: none;
             font-size: 20px;
+            margin-top: 20px;
             border: 2px solid white;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 20px; /* Botón redondeado */
             transition: background-color 0.3s ease;
         }
         a:hover {
             background-color: white;
             color: black;
+        }
+        .social-buttons {
+            margin-top: 30px;
+        }
+        .social-buttons a {
+            display: inline-block;
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .social-buttons a:hover {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -74,14 +90,20 @@
         </div>
     </div>
 
-    <div class="buttons">
-        <a href="https://instagram.com/jjuampaaa" target="_blank">Instagram: @jjuampaaa</a>
-        <a href="https://instagram.com/emidursi" target="_blank">Instagram: @emidursi</a>
+    <a href="https://www.youtube.com/watch?v=Fh6XXxBHy6c" target="_blank">Mira el video</a>
+
+    <div class="social-buttons">
+        <!-- Botones de Instagram -->
+        <a href="https://www.instagram.com/jjuampaaa" target="_blank">JJ</a>
+        <a href="https://www.instagram.com/emidursi" target="_blank">EM</a>
     </div>
 
     <script>
-        // Configuración de la fecha y hora de finalización
-        var countdownDate = new Date("2024-08-20T20:00:00").getTime();
+        // Configuración de la fecha y hora de finalización para mañana a las 20:00
+        var countdownDate = new Date();
+        countdownDate.setHours(20, 0, 0, 0);
+        countdownDate.setDate(countdownDate.getDate() + 1);
+        countdownDate = countdownDate.getTime();
 
         // Actualizar la cuenta regresiva cada segundo
         var countdownFunction = setInterval(function() {
@@ -108,7 +130,6 @@
             if (distance < 0) {
                 clearInterval(countdownFunction);
                 document.getElementById("countdown").innerHTML = "¡Es hora!";
-                window.location.href = "https://youtu.be/Fh6XXxBHy6c"; // Redirección al video de YouTube
             }
         }, 1000);
     </script>
