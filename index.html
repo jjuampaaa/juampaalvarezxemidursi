@@ -18,6 +18,11 @@
             text-align: center;
             flex-direction: column;
         }
+        #countdown-container {
+            border: 2px solid white; /* Contorno alrededor de la cuenta regresiva */
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados del contorno */
+        }
         #countdown {
             display: flex;
             justify-content: center;
@@ -39,48 +44,51 @@
         .social-buttons a {
             display: inline-block;
             margin: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: white;
-            color: black;
-            font-size: 24px; /* Tamaño de fuente más grande para los íconos */
-            line-height: 50px;
+            width: 120px; /* Ancho del botón */
+            height: 40px; /* Altura del botón */
+            border: 2px solid white;
+            border-radius: 5px; /* Bordes rectangulares */
+            background-color: black;
+            color: white;
+            font-size: 16px; /* Tamaño de fuente del botón */
+            line-height: 36px;
             text-align: center;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .social-buttons a:hover {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
 
-    <div id="countdown">
-        <div class="time-unit">
-            <div id="days"></div>
-            <span>Días</span>
-        </div>
-        <div class="time-unit">
-            <div id="hours"></div>
-            <span>Horas</span>
-        </div>
-        <div class="time-unit">
-            <div id="minutes"></div>
-            <span>Minutos</span>
-        </div>
-        <div class="time-unit">
-            <div id="seconds"></div>
-            <span>Segundos</span>
+    <div id="countdown-container">
+        <div id="countdown">
+            <div class="time-unit">
+                <div id="days"></div>
+                <span>Días</span>
+            </div>
+            <div class="time-unit">
+                <div id="hours"></div>
+                <span>Horas</span>
+            </div>
+            <div class="time-unit">
+                <div id="minutes"></div>
+                <span>Minutos</span>
+            </div>
+            <div class="time-unit">
+                <div id="seconds"></div>
+                <span>Segundos</span>
+            </div>
         </div>
     </div>
 
     <div class="social-buttons">
         <!-- Botones de Instagram -->
-        <a href="https://www.instagram.com/jjuampaaa" target="_blank">JJ</a>
-        <a href="https://www.instagram.com/emidursi" target="_blank">EM</a>
+        <a href="https://www.instagram.com/jjuampaaa" target="_blank">More Info</a>
+        <a href="https://www.instagram.com/emidursi" target="_blank">More Info</a>
     </div>
 
     <script>
