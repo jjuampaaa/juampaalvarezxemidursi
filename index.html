@@ -9,7 +9,7 @@
             background-color: black;
             background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Fondo texturizado */
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif; /* Tipografía minimalista */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,7 +22,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            font-size: 60px;
+            font-size: 50px; /* Tamaño de fuente más pequeño para un estilo más minimalista */
         }
         .time-unit {
             display: flex;
@@ -30,22 +30,8 @@
             align-items: center;
         }
         .time-unit span {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            margin-top: 20px;
-            border: 2px solid white;
-            padding: 10px 20px;
-            border-radius: 20px; /* Botón redondeado */
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: white;
-            color: black;
+            font-size: 16px; /* Tamaño de fuente más pequeño */
+            margin-top: 5px;
         }
         .social-buttons {
             margin-top: 30px;
@@ -53,13 +39,13 @@
         .social-buttons a {
             display: inline-block;
             margin: 10px;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background-color: white;
             color: black;
-            font-size: 20px;
-            line-height: 40px;
+            font-size: 24px; /* Tamaño de fuente más grande para los íconos */
+            line-height: 50px;
             text-align: center;
             text-decoration: none;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -67,9 +53,6 @@
         .social-buttons a:hover {
             background-color: black;
             color: white;
-        }
-        #video-link {
-            display: none; /* Ocultar el enlace inicialmente */
         }
     </style>
 </head>
@@ -93,8 +76,6 @@
             <span>Segundos</span>
         </div>
     </div>
-
-    <a id="video-link" href="https://www.youtube.com/watch?v=Fh6XXxBHy6c" target="_blank">Mira el video</a>
 
     <div class="social-buttons">
         <!-- Botones de Instagram -->
@@ -131,7 +112,6 @@
             if (distance < 0) {
                 clearInterval(countdownFunction);
                 document.getElementById("countdown").innerHTML = "¡Es hora!";
-                document.getElementById("video-link").style.display = "inline"; // Mostrar el enlace al video
             }
         }, 1000);
     </script>
