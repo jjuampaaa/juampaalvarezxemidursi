@@ -8,6 +8,7 @@
         body {
             background-color: black;
             background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Fondo texturizado */
+            background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
             color: white;
             font-family: 'Arial', sans-serif; /* Tipografía minimalista */
             display: flex;
@@ -19,9 +20,10 @@
             flex-direction: column;
         }
         #countdown-container {
-            border: 2px solid white; /* Contorno alrededor de la cuenta regresiva */
+            border: 4px solid white; /* Contorno alrededor de la cuenta regresiva */
             padding: 20px;
-            border-radius: 10px; /* Bordes redondeados del contorno */
+            border-radius: 15px; /* Bordes redondeados del contorno */
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para mejor visibilidad */
         }
         #countdown {
             display: flex;
