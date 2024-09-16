@@ -17,7 +17,7 @@ body {
     max-width: 90%;
     width: 500px;
     position: relative; /* Añadido para ajustar la posición del contenedor */
-    top: -20%; /* Mueve el contenedor hacia arriba */
+    top: -10%; /* Mueve el contenedor hacia arriba */
 }
 
 .phrase {
@@ -96,3 +96,4 @@ body {
         padding: 8px 16px; /* Ajusta el relleno en móviles */
     }
 }
+
