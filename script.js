@@ -1,5 +1,5 @@
 // Cuenta atrás
-const countdownDate = new Date("2024-09-16T20:00:00").getTime();
+const countdownDate = new Date("2024-10-02T20:00:00-03:00").getTime();
 
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
