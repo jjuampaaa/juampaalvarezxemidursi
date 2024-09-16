@@ -14,9 +14,9 @@ body {
 }
 
 .phrase {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px; /* Tamaño de fuente para la frase */
-    color: white;
+    font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
+    font-size: 80px; /* Tamaño muy grande para la frase */
+    color: white; /* Color de la frase */
     margin-bottom: 20px;
 }
 
@@ -24,7 +24,7 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 40px; /* Tamaño reducido para la cuenta regresiva */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Espacio debajo de la cuenta regresiva */
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -44,8 +44,7 @@ body {
 
 .buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los botones horizontalmente */
+    justify-content: center; /* Centra los botones horizontalmente */
     gap: 10px; /* Espacio entre los botones */
 }
 
