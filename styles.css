@@ -13,10 +13,17 @@ body {
     text-align: center;
 }
 
+.phrase {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; /* Tamaño de fuente para la frase */
+    color: white;
+    margin-bottom: 20px;
+}
+
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 48px; /* Tamaño aumentado para mayor visibilidad */
-    color: white; /* Color del texto cambiado a blanco */
+    font-size: 40px; /* Tamaño reducido para la cuenta regresiva */
+    color: white;
     margin-bottom: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -31,7 +38,7 @@ body {
 
 .countdown .label {
     display: block;
-    font-size: 24px; /* Tamaño de fuente para las etiquetas */
+    font-size: 20px; /* Tamaño de fuente para las etiquetas */
     margin-top: 5px;
 }
 
