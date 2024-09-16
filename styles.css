@@ -1,8 +1,7 @@
-/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
-    background: url('texture.jpg') no-repeat center center fixed;
+    background: url('texture1.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -12,54 +11,56 @@ body {
 
 .container {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 90%;
+    width: 500px;
 }
 
 .phrase {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3vw; /* Tamaño de fuente reducido y adaptable */
-    color: white;
-    margin-bottom: 15px; /* Margen reducido */
+    font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
+    font-size: 36px; /* Tamaño más pequeño para la frase */
+    color: white; /* Color de la frase */
+    margin-bottom: 20px;
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 3vw; /* Tamaño de fuente reducido y adaptable */
+    font-size: 24px; /* Tamaño reducido para la cuenta regresiva */
     color: white;
-    margin-bottom: 30px; /* Margen reducido */
-    padding: 15px; /* Padding reducido */
+    margin-bottom: 20px; /* Espacio debajo de la cuenta regresiva */
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 12px; /* Bordes menos redondeados */
+    border-radius: 10px;
     display: inline-block;
 }
 
 .countdown span {
     display: inline-block;
-    margin: 0 5px; /* Espacio reducido entre los elementos */
+    margin: 0 8px;
 }
 
 .countdown .label {
     display: block;
-    font-size: 1.1em; /* Tamaño de fuente para las etiquetas reducido */
-    margin-top: 4px;
+    font-size: 14px; /* Tamaño de fuente para las etiquetas */
+    margin-top: 3px;
 }
 
 .buttons {
     display: flex;
-    flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
-    justify-content: center;
-    gap: 8px; /* Espacio reducido entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 8px; /* Espacio entre los botones */
 }
 
 .button {
     display: inline-block;
-    padding: 8px 16px; /* Padding reducido */
+    padding: 8px 16px;
     font-family: 'Arial', sans-serif;
-    font-size: 2.5vw; /* Tamaño de fuente reducido y adaptable */
+    font-size: 14px;
     color: white;
     background-color: #333;
     border: none;
-    border-radius: 15px; /* Bordes menos redondeados */
+    border-radius: 15px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -69,21 +70,22 @@ body {
     transform: scale(1.05);
 }
 
-/* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     .phrase {
-        font-size: 5vw; /* Tamaño de fuente más pequeño para móviles */
-        margin-bottom: 10px; /* Margen reducido en móviles */
+        font-size: 28px; /* Tamaño aún más pequeño en móviles */
     }
 
     .countdown {
-        font-size: 4vw; /* Tamaño de fuente más pequeño para móviles */
-        padding: 10px; /* Menos padding en móviles */
-        margin-bottom: 20px; /* Margen reducido en móviles */
+        font-size: 20px; /* Tamaño más pequeño para la cuenta regresiva en móviles */
+        padding: 10px;
+    }
+
+    .countdown .label {
+        font-size: 12px; /* Tamaño más pequeño para las etiquetas en móviles */
     }
 
     .button {
-        font-size: 3vw; /* Tamaño de fuente más pequeño para botones en móviles */
-        padding: 6px 12px; /* Menos padding en botones en móviles */
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
