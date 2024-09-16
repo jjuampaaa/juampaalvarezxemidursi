@@ -34,8 +34,8 @@ body {
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 50px;
-    color: white;
+    font-size: 50px; /* Tamaño aumentado para mayor visibilidad */
+    color: white; /* Color del texto cambiado a blanco */
     margin-bottom: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -50,6 +50,6 @@ body {
 
 .countdown .label {
     display: block;
-    font-size: 18px;
+    font-size: 24px; /* Tamaño de fuente para las etiquetas */
     margin-top: 5px;
 }
