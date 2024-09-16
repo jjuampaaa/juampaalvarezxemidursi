@@ -17,7 +17,7 @@ body {
     max-width: 90%;
     width: 500px;
     position: relative; /* Añadido para ajustar la posición del contenedor */
-    top: -30%; /* Mueve el contenedor hacia arriba */
+    top: -20%; /* Mueve el contenedor hacia arriba */
 }
 
 .phrase {
@@ -78,13 +78,8 @@ body {
 }
 
 @media (max-width: 600px) {
-    .container {
-        top: -40%; /* Mueve el contenedor aún más arriba en móviles */
-    }
-
     .phrase {
         font-size: 28px; /* Tamaño aún más pequeño en móviles */
-        margin-top: -20px; /* Ajusta el espacio arriba de la frase en móviles */
     }
 
     .countdown {
