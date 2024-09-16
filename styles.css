@@ -16,30 +16,29 @@ body {
     box-sizing: border-box;
     max-width: 90%;
     width: 500px;
-    position: relative; /* Mantiene el contenedor centrado */
+    position: relative; /* Añadido para ajustar la posición del contenedor */
+    top: -10%; /* Mueve el contenedor hacia arriba */
 }
 
 .phrase {
     font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
     font-size: 36px; /* Tamaño de la frase */
     color: white; /* Color de la frase */
-    margin: 0;
+    margin: 0; /* Elimina el margen inferior para evitar el salto de línea */
     white-space: normal; /* Permite el ajuste del texto en varias líneas */
     line-height: 1.2; /* Ajusta el interlineado para mejor legibilidad */
     word-break: break-word; /* Permite que las palabras largas se dividan en líneas */
-    position: relative;
-    top: -50px; /* Mueve la frase más hacia arriba en la versión web */
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 24px; /* Tamaño del contador */
+    font-size: 24px; /* Tamaño reducido para la cuenta regresiva */
     color: white;
+    margin-bottom: 20px; /* Espacio debajo de la cuenta regresiva */
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     display: inline-block;
-    margin-top: 20px; /* Ajusta el margen superior para centrarlo mejor */
 }
 
 .countdown span {
@@ -49,20 +48,19 @@ body {
 
 .countdown .label {
     display: block;
-    font-size: 14px; /* Tamaño de las etiquetas */
+    font-size: 14px; /* Tamaño de fuente para las etiquetas */
     margin-top: 3px;
 }
 
 .buttons {
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
-    margin-top: 20px; /* Añade un espacio entre el contador y los botones */
     gap: 10px; /* Espacio entre los botones */
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px; /* Ajusta el relleno para adaptarse al texto */
+    padding: 10px 20px; /* Ajusta el relleno para adaptarse al texto más largo */
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: white;
@@ -71,7 +69,7 @@ body {
     border-radius: 15px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    text-align: center;
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
 .button:hover {
@@ -81,12 +79,11 @@ body {
 
 @media (max-width: 600px) {
     .phrase {
-        font-size: 28px; /* Tamaño más pequeño para móviles */
-        top: -20px; /* Ajusta la posición de la frase en móviles */
+        font-size: 28px; /* Tamaño aún más pequeño en móviles */
     }
 
     .countdown {
-        font-size: 20px; /* Tamaño más pequeño para móviles */
+        font-size: 20px; /* Tamaño más pequeño para la cuenta regresiva en móviles */
         padding: 10px;
     }
 
@@ -96,7 +93,6 @@ body {
 
     .button {
         font-size: 12px;
-        padding: 8px 16px; /* Ajusta el relleno para móviles */
+        padding: 8px 16px; /* Ajusta el relleno en móviles */
     }
 }
-
