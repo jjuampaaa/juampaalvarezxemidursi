@@ -34,7 +34,22 @@ body {
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.countdown span {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.countdown .label {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
 }
