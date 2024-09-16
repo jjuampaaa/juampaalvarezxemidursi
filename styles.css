@@ -11,19 +11,19 @@ body {
 
 .container {
     text-align: center;
-    max-width: 90%; /* Para que todo el contenido se ajuste mejor a pantallas pequeñas */
+    max-width: 90%;
 }
 
 .phrase {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px; /* Tamaño más pequeño para móviles */
+    font-size: 50px;
     color: white;
     margin-bottom: 20px;
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 30px; /* Tamaño reducido para la cuenta regresiva */
+    font-size: 30px;
     color: white;
     margin-bottom: 30px;
     padding: 15px;
@@ -34,7 +34,7 @@ body {
 
 .countdown span {
     display: inline-block;
-    margin: 0 5px; /* Margen más pequeño para móviles */
+    margin: 0 5px;
 }
 
 .countdown .label {
@@ -58,7 +58,7 @@ body {
     background-color: #333;
     border: none;
     border-radius: 20px;
-    text-decoration: none;
+    text-decoration: none; /* Evita que parezca un link */
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -67,10 +67,15 @@ body {
     transform: scale(1.05);
 }
 
+/* Evitar que los links sean subrayados en móviles */
+.button:link, .button:visited {
+    text-decoration: none;
+}
+
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .phrase {
-        font-size: 40px; /* Reducción de tamaño en pantallas medianas */
+        font-size: 40px;
     }
 
     .countdown {
@@ -86,7 +91,7 @@ body {
 
 @media (max-width: 480px) {
     .phrase {
-        font-size: 30px; /* Reducción de tamaño en pantallas pequeñas */
+        font-size: 30px;
     }
 
     .countdown {
