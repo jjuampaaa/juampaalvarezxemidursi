@@ -17,19 +17,19 @@ body {
 
 .phrase {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 4vw; /* Tamaño de fuente más pequeño y adaptable */
+    font-size: 3vw; /* Tamaño de fuente reducido y adaptable */
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Margen reducido */
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 4vw; /* Tamaño de fuente adaptable al ancho de la pantalla */
+    font-size: 3vw; /* Tamaño de fuente reducido y adaptable */
     color: white;
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 30px; /* Margen reducido */
+    padding: 15px; /* Padding reducido */
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
+    border-radius: 12px; /* Bordes menos redondeados */
     display: inline-block;
 }
 
@@ -40,26 +40,26 @@ body {
 
 .countdown .label {
     display: block;
-    font-size: 1.2em; /* Tamaño de fuente para las etiquetas */
-    margin-top: 5px;
+    font-size: 1.1em; /* Tamaño de fuente para las etiquetas reducido */
+    margin-top: 4px;
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
     justify-content: center;
-    gap: 10px;
+    gap: 8px; /* Espacio reducido entre los botones */
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Padding reducido */
     font-family: 'Arial', sans-serif;
-    font-size: 3vw; /* Tamaño de fuente adaptable al ancho de la pantalla */
+    font-size: 2.5vw; /* Tamaño de fuente reducido y adaptable */
     color: white;
     background-color: #333;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px; /* Bordes menos redondeados */
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -72,16 +72,18 @@ body {
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     .phrase {
-        font-size: 6vw; /* Tamaño de fuente más pequeño para móviles */
+        font-size: 5vw; /* Tamaño de fuente más pequeño para móviles */
+        margin-bottom: 10px; /* Margen reducido en móviles */
     }
 
     .countdown {
-        font-size: 5vw; /* Tamaño de fuente más pequeño para móviles */
+        font-size: 4vw; /* Tamaño de fuente más pequeño para móviles */
         padding: 10px; /* Menos padding en móviles */
+        margin-bottom: 20px; /* Margen reducido en móviles */
     }
 
     .button {
-        font-size: 4vw; /* Tamaño de fuente más pequeño para botones en móviles */
-        padding: 8px 16px; /* Menos padding en botones en móviles */
+        font-size: 3vw; /* Tamaño de fuente más pequeño para botones en móviles */
+        padding: 6px 12px; /* Menos padding en botones en móviles */
     }
 }
