@@ -11,7 +11,10 @@ const countdownFunction = setInterval(function() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = 
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        `<span>${days} <span class="label">días</span></span>` +
+        `<span>${hours} <span class="label">horas</span></span>` +
+        `<span>${minutes} <span class="label">minutos</span></span>` +
+        `<span>${seconds} <span class="label">segundos</span></span>`;
 
     if (distance < 0) {
         clearInterval(countdownFunction);
