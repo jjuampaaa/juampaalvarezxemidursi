@@ -23,26 +23,26 @@ body {
 }
 
 .phrase {
-    font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
-    font-size: 36px; /* Tamaño de la frase */
-    color: white; /* Color de la frase */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: white;
     margin: 0;
-    white-space: normal; /* Permite el ajuste del texto en varias líneas */
-    line-height: 1.2; /* Ajusta el interlineado para mejor legibilidad */
-    word-break: break-word; /* Permite que las palabras largas se dividan en líneas */
+    white-space: normal;
+    line-height: 1.2;
+    word-break: break-word;
     position: relative;
-    top: -70px; /* Mueve la frase aún más hacia arriba */
+    top: -70px;
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 24px; /* Tamaño del contador */
+    font-size: 24px;
     color: white;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     display: inline-block;
-    margin-top: 20px; /* Ajusta el margen superior para centrarlo mejor */
+    margin-top: 20px;
 }
 
 .countdown span {
@@ -52,19 +52,61 @@ body {
 
 .countdown .label {
     display: block;
-    font-size: 14px; /* Tamaño de las etiquetas */
+    font-size: 14px;
     margin-top: 3px;
 }
 
 .buttons {
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    margin-top: 20px; /* Añade un espacio entre el contador y los botones */
-    gap: 10px; /* Espacio entre los botones */
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px; /* Ajusta el relleno para adaptarse al texto */
+    padding: 10px 20px;
     font-family: 'Arial', sans-serif;
-   
+    font-size: 14px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none; /* Elimina la apariencia de enlace */
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al estilo de botón */
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Evitar color de enlace predeterminado en móviles */
+a.button {
+    color: white !important; /* Asegura que el texto sea blanco */
+    text-decoration: none !important; /* Elimina el subrayado */
+}
+
+@media (max-width: 600px) {
+    .phrase {
+        font-size: 28px;
+        top: -30px;
+    }
+
+    .countdown {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .countdown .label {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
