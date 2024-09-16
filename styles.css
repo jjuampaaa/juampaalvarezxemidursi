@@ -11,6 +11,10 @@ body {
 
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 
 .button {
@@ -34,7 +38,7 @@ body {
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 50px; /* Tamaño aumentado para mayor visibilidad */
+    font-size: 48px; /* Tamaño aumentado para mayor visibilidad */
     color: white; /* Color del texto cambiado a blanco */
     margin-bottom: 20px;
     padding: 20px;
