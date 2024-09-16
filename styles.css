@@ -7,75 +7,59 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%; /* Asegura que el fondo cubra todo el ancho */
 }
 
 .container {
     text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    max-width: 90%;
-    width: 500px;
-    position: absolute;
-    top: 50%; /* Posiciona el contenedor al 50% desde la parte superior */
-    left: 50%; /* Posiciona el contenedor al 50% desde la parte izquierda */
-    transform: translate(-50%, -50%); /* Centra el contenedor vertical y horizontalmente */
+    max-width: 90%; /* Para que todo el contenido se ajuste mejor a pantallas pequeñas */
 }
 
 .phrase {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
+    font-size: 50px; /* Tamaño más pequeño para móviles */
     color: white;
-    margin: 0;
-    white-space: normal;
-    line-height: 1.2;
-    word-break: break-word;
-    position: relative;
-    top: -70px;
+    margin-bottom: 20px;
 }
 
 .countdown {
     font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 30px; /* Tamaño reducido para la cuenta regresiva */
     color: white;
+    margin-bottom: 30px;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+    border-radius: 15px;
     display: inline-block;
-    margin-top: 20px;
 }
 
 .countdown span {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 5px; /* Margen más pequeño para móviles */
 }
 
 .countdown .label {
     display: block;
-    font-size: 14px;
-    margin-top: 3px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     gap: 10px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 15px;
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: white;
     background-color: #333;
     border: none;
-    border-radius: 15px;
-    text-decoration: none; /* Elimina la apariencia de enlace */
+    border-radius: 20px;
+    text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    text-align: center;
-    cursor: pointer; /* Cambia el cursor al estilo de botón */
 }
 
 .button:hover {
@@ -83,30 +67,35 @@ body {
     transform: scale(1.05);
 }
 
-/* Evitar color de enlace predeterminado en móviles */
-a.button {
-    color: white !important; /* Asegura que el texto sea blanco */
-    text-decoration: none !important; /* Elimina el subrayado */
-}
-
-@media (max-width: 600px) {
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
     .phrase {
-        font-size: 28px;
-        top: -30px;
+        font-size: 40px; /* Reducción de tamaño en pantallas medianas */
     }
 
     .countdown {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
-    }
-
-    .countdown .label {
-        font-size: 12px;
     }
 
     .button {
         font-size: 12px;
-        padding: 8px 16px;
+        padding: 6px 10px;
     }
 }
 
+@media (max-width: 480px) {
+    .phrase {
+        font-size: 30px; /* Reducción de tamaño en pantallas pequeñas */
+    }
+
+    .countdown {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+}
