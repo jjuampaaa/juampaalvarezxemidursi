@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%; /* Asegura que el fondo cubra todo el ancho */
 }
 
 .container {
@@ -15,13 +16,18 @@ body {
     box-sizing: border-box;
     max-width: 90%;
     width: 500px;
+    position: relative; /* Añadido para ajustar la posición del contenedor */
+    top: -10%; /* Mueve el contenedor hacia arriba */
 }
 
 .phrase {
     font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
-    font-size: 36px; /* Tamaño más pequeño para la frase */
+    font-size: 36px; /* Tamaño de la frase */
     color: white; /* Color de la frase */
-    margin-bottom: 20px;
+    margin: 0; /* Elimina el margen inferior para evitar el salto de línea */
+    white-space: normal; /* Permite el ajuste del texto en varias líneas */
+    line-height: 1.2; /* Ajusta el interlineado para mejor legibilidad */
+    word-break: break-word; /* Permite que las palabras largas se dividan en líneas */
 }
 
 .countdown {
