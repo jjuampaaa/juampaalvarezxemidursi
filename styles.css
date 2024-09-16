@@ -16,18 +16,18 @@ body {
     box-sizing: border-box;
     max-width: 90%;
     width: 500px;
-    position: relative; /* Añadido para ajustar la posición del contenedor */
-    top: -20%; /* Mueve el contenedor hacia arriba */
 }
 
 .phrase {
     font-family: 'Courier New', Courier, monospace; /* Tipografía minimalista y curva */
     font-size: 36px; /* Tamaño de la frase */
     color: white; /* Color de la frase */
-    margin: 0; /* Elimina el margen inferior para evitar el salto de línea */
+    margin: 0;
     white-space: normal; /* Permite el ajuste del texto en varias líneas */
     line-height: 1.2; /* Ajusta el interlineado para mejor legibilidad */
     word-break: break-word; /* Permite que las palabras largas se dividan en líneas */
+    position: relative; /* Añadido para ajustar la posición */
+    top: -20px; /* Mueve la frase hacia arriba */
 }
 
 .countdown {
@@ -80,6 +80,7 @@ body {
 @media (max-width: 600px) {
     .phrase {
         font-size: 28px; /* Tamaño aún más pequeño en móviles */
+        top: -10px; /* Mueve la frase hacia arriba en móviles */
     }
 
     .countdown {
@@ -96,3 +97,4 @@ body {
         padding: 8px 16px; /* Ajusta el relleno en móviles */
     }
 }
+
