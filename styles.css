@@ -55,12 +55,12 @@ body {
 .buttons {
     display: flex;
     justify-content: center; /* Centra los botones horizontalmente */
-    gap: 8px; /* Espacio entre los botones */
+    gap: 10px; /* Espacio entre los botones */
 }
 
 .button {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 10px 20px; /* Ajusta el relleno para adaptarse al texto más largo */
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     color: white;
@@ -69,6 +69,7 @@ body {
     border-radius: 15px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
 .button:hover {
@@ -92,6 +93,6 @@ body {
 
     .button {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 8px 16px; /* Ajusta el relleno en móviles */
     }
 }
