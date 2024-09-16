@@ -19,5 +19,7 @@ const countdownFunction = setInterval(function() {
     if (distance < 0) {
         clearInterval(countdownFunction);
         document.getElementById("countdown").innerHTML = "EXPIRED";
+        // Redirigir a YouTube
+        window.location.href = "https://youtu.be/Fh6XXxBHy6c";
     }
 }, 1000);
