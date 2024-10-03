@@ -20,6 +20,6 @@ const countdownFunction = setInterval(function() {
         clearInterval(countdownFunction);
         document.getElementById("countdown").innerHTML = "EXPIRED";
         // Redirigir a YouTube
-        window.location.href = "https://youtu.be/ujMMkzaJfYA?si=4yDIU6zjaIyFcU45";
+        window.location.href = "https://youtu.be/ujMMkzaJfYA?si=xynzzqli0OFPZwRg";
     }
 }, 1000);
